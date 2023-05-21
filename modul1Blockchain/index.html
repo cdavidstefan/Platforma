@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Navigation</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="inner-area">
+    <!-- Menu Overlay --> 
+    <!-- no problem in adding overlay-slide-left, it doesn't affect initial page load. it's hidden to the left -->
+    <div class="overlay overlay-slide-left" id="overlay">
+      <!-- Menu Items -->
+      <nav>
+        <ul>
+          <!-- Because the slide-out class is transforming off the page we won't see it when we load the page -->
+          <li id="nav-1" class="slide-out-1"><a href="/homePage/index.html">Pagina Principala</a></li>
+          <li id="nav-2" class="slide-out-2"><a href="#sectiunea1">Noțiuni Generale</a></li>
+          <li id="nav-3" class="slide-out-3"><a href="#sectiunea2">Caracteristici</a></li>
+          <li id="nav-4" class="slide-out-4"><a href="#sectiunea3">Arhitectură</a></li>
+          <li id="nav-5" class="slide-out-5"><a href="#sectiunea4">Criptografia</a></li>
+          <li id="nav-6" class="slide-out-6"><a href="#sectiunea5">Mecanisme de consens</a></li>
+          <li id="nav-7" class="slide-out-7"><a href="#sectiunea6">Contracte Inteligente</a></li>
+          <li id="nav-8" class="slide-out-8"><a href="#sectiunea7">Avantaje și dezavantaje</a></li>
+          <li id="nav-9" class="slide-out-9"><a href="#sectiunea8">Aplicații</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Menu Bars -->
+    <div class="menu-bars" id="menu-bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <!-- Sections -->
+    <section id="sectiunea1">
+      <h1>Istoric</h1>
+      <div class="text-box" id="text-box">
+        <p>
+        &nbsp&nbsp&nbspBlockchain-ul este o formă de stocare a informației într-o bază de date descentralizată la care se pot adăuga si citi date însă fără a putea fi modificate sau șterse, ceea ce îl face dificil de utilizat în scopuri fraudulente. Acesta este practic un lanț de blocuri care stochează toate tranzacțiile folosind un registru public (K. Salah, 2019), iar acest lanț crește pe masură ce noi blocuri sunt atașate lui. In 1982 criptograful David Chaum a propus primul protocol blockchain in lucrarea sa de dizertație “Computer Systems Established, Maintained and Trusted by Mutually Suspicious Groups.” (Sherman et al., 2019).  Lucrări suplimentare pe un lanț de blocuri securizat criptografic au fost efectuate de catre Stuart Haber și W. Scott Stornetta (1991). Aceștia au intenționat să implementeze un sistem în care marcajele de timp ale unor documente să nu poată fi modificate. In anul 1992, Haber, Stornetta și Dave Bayer au încorporat arborii Merke în designul blockchain-ului, ceea ce i-a îmbunătățit eficiența prin faptul că a permis colectarea mai multor documente intr-un singur bloc.
+        </p>
+      </div>
+      <div class="text-box" id="text-box">
+        <p><strong>Blockchain 1.0</strong></p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspA fost conceptualizat in anul 2008 de o persoană sau un grup de persoane cunoscut sub pseudonimul Satoshi Nakamoto. Nakamoto a îmbunătățit designul folosind o nouă metodă numită Hashcash pentru marcarea dății blocurilor fără a fi necesară semnarea lor de către un element de încredere, introducând un parametru nou care stabilizează rata la care blocurile noi sunt adăugate in lanț. Câteva dintre caracteristicile cheie ale blockchain-ului sunt descentralizarea, transparența, auditabilitatea și imuabilitatea (M. Kouhizdaeh, 2018). Prima generație de blockchain a apărut din conceptul de registru distribuit (Mills et al., 2016), acesta este o bază de date care este partajată in mod consensual între mai mulți participanți, permițând astfel martorilor publici să elimine scenariile cheltuielilor duble. Cea mai proeminentă aplicație a DLT (Distributed Ledger Technology) au fost criptomonedele unde Bitcoin a jucat un rol esențial, deschizând calea pentru “Internetul Banilor” (Antonopoulos, A.M. 2016).
+        </p>
+        <p>
+          &nbsp&nbsp&nbspIn ciuda tuturor beneficiilor, Bitcoin are, de asemenea, unele piedici majore. Această generație de blockchain utilizează în esență mecanismul de consens Proof of Work (PoW) care necesită calcularea puzzle-urilor matematice complexe. Datorită complexității, acest mecanism necesită mult timp si consumă cantități mari de energie comparabil cu profiturile totale realizate.
+        </p>
+        <p>
+          &nbsp&nbsp&nbspUn alt dezavantaj al ideii lui Satoshi despre Blockchain 1.0 este că utilizează doar blocuri de informații de 1 megabyte (MB) pentru tranzacțiile cu Bitcoin. Ultimele și cele mai notabile deficiențe ale Blockchain 1.0 sunt incapacitatea acestuia de a susține contracte inteligente si alte sectoare de aplicații în afară de utilități financiare (Panda, S.K. et al. 2021).
+        </p>
+        <br>
+        <p><strong>Blockchain 2.0</strong></p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspConsumul mare de energie și scalabilitatea slabă a primei generații de blockchain l-au determinat pe Vitalik Buterin să extindă conceptul de Blockchain dincolo de criptomonede. Acest lucru a condus la apariția celei de-a doua generații de Blockchain, adică Ethereum, care se bazează pe noi concepte de contracte inteligente, împreună cu mecanisme de consens Proof of Work (Buterin, V, 2014).
+        </p>
+        <p>
+          &nbsp&nbsp&nbspContractele inteligente sunt programe de calculator autonome cu autogestionare care se execută automat pe baza unor clauze predefinite între două părți. Aceste contracte sunt imposibil de piratat sau alterat. Prin urmare, contractele inteligente reduc în mare măsură costul verificării, execuției și prevenirii fraudei și permit definirea transparentă a contractului (Macrinici, D, et al. 2018). Ethereum utilizează implementarea contractelor inteligente în blockchain. Este o tehnologie construită de comunitate in spatele unei alte criptomonede Ether (ETH) care are o gamă largă de aplicații în aproape toate domeniile, cum ar fii votul electronic, imobiliare sau tranzacționare (Katsiampa, P. 2019).
+        </p>
+        <p>
+          &nbsp&nbsp&nbspCu toate acestea, contractele inteligente ridică și mai multe dificultăți deoarece sunt extrem de dificil de scris (Delmolino, K. et al. 2016). Orice greșeală la scrierea contractului poate duce la efecte adverse nedorite (Chen, T. et al. 2017). Odată ce o greșeală din cod începe să fie exploatată, nu există nicio modalitate eficientă de a o opri, în afară de obținerea unui consens și rescrierea întregului cod subiacent (Marino B., Juels A. 2016). Astfel, pentru a obține beneficii maxime ale Ethereum, este esențială formularea și implementarea corectă a contractelor inteligente.
+        </p>
+        <br>
+        <p><strong>Blockchain 3.0</strong></p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspPrincipalul dezavantaj al Blockchain 1.0 și 2.0 este că nu sunt deloc scalabili și necesită ore pentru a confirma tranzacțiile, majoritatea fiind bazate pe mecanismul Proof of Work. Toate acestea au condus la nașterea actualei generații de Blockchain numită Blockchain 3.0, care își propune să facă criptomonedele viabile la nivel global. Pe lângă contractele inteligente, a treia generație de blockchain implică în principal aplicații descentralizate (dApps). Sunt programe digitale care rulează pe o rețea Blockchain de computere în loc de un singur computer și, prin urmare, sunt dincolo de competența oricărei autorități centrale. Această generație este, prin urmare, capabilă să susțină tranzacțiile intre diferite blockchain-uri cu ajutorul unor tehnici precum sharding. Sharding presupune ca fiecare nod dintr-un Blockchain conține doar o parte din datele de pe el și nu informațiile complete. Acest lucru împrăștie sarcina și face ca sistemul să fie eficient si rezistent la intruziune. Blockchain 3.0 utilizează, de asemenea, mecanisme de consens Proof of Stake și Proof of Authority pentru a permite o viteză și o putere de calcul îmbunătățite pentru contractele inteligente (De Angelis, S. et al 2018). Această generație de Blockchain a deschis calea pentru mai multe platforme, fiecare cu avantajul lor unic pentru a încuraja utilizarea Blockchain în viața de zi cu zi. Aplicațiile descentralizate (dApps) nu rezidă pe o anumită adresă IP, prin urmare un potențial atacator nu poate modifica datele și securitatea este îmbunătățită.
+        </p>
+        <p>
+          &nbsp&nbsp&nbspCu toate acestea, a treia generație de Blockchain are și câteva dezavantaje, cum ar fi remedierea erorilor sau actualizarea, datorită naturii lor descentralizate. Mecanismele de consens aplicate sunt relativ complicate.
+        </p>
+        <br>
+        <p><strong>Blockchain 4.0</strong></p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspAcesta își propune să ofere tehnologia ca platformă utilizabilă de afaceri pentru a crea și rula aplicații și are posibilitatea de a încorpora alte tehnologii prospere, cum ar fi inteligența artificială. Blockchain 4.0 permite proliferarea unei integrări fara intreruperi a diferitelor platforme pentru a funcționa sub o singură umbrelă în coerență, pentru a îndeplini cerințele unei afaceri sau industrii (Panda, S. 2021).
+        </p>
+        <p>
+          &nbsp&nbsp&nbspPlatforma introductivă pentru a prezenta utilități ale Blockchain 4.0 este Unibright, care permite o amalgamare a mai multor modele de afaceri Blockchain (Schmidt, S. et al. 2018).
+        </p>
+        <p>
+          &nbsp&nbsp&nbspProiecte care rulează pe a patra generație precum Metahash, folosing algoritm multiple-Proof of Stake, sunt capabile să proceseze peste 60.000 de tranzacții pe secundă. Ca și comparație, în prezent VISA poate să proceseze până la 24.000 de tranzacții pe secundă.
+        </p>
+        <br>
+        <p><strong>Blockchain 5.0</strong></p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspUltima versiune a tehnologiei, implică convergența sa cu inteligența artificială (AI), IIoT, robotică, etc. Dimensiunea blocului este de doar 120 bytes, care este de aproximativ 8.000 de ori mai mică decât dimensiunea unui bloc Bitcoin (1 MB). Acest lucru face ca transferul și viteza de procesare a datelor sa fie la un nivel cu totul nou (IDC, 2021).
+        </p>
+      </div>
+      </section>
+    <section id="sectiunea2"><h1>Caracteristici</h1>
+      <div class="text-box" id="text-box">
+        <p>
+          &nbsp&nbsp&nbsp •	<strong>Descentralizarea</strong> in contextul tehnologiei blockchain presupune ca registrul și datele asociate acestuia sunt răspândite intr-o rețea de noduri și nu sunt stocate într-o singură locație centrală sau controlate de o singură entitate. Acest lucru este opus unui sistem centralizat in care o organizație sau o entitate controlează și menține registrul. Într-o rețea descentralizată, tranzacțiile sunt validate si verificate și noi blocuri sunt adăugate in lanț printr-un mecanism de consens intre noduri si nu de către o autoritate centrală, fiecare nod păstrând o copie a registrului. Pentru ca o tranzacție nouă să fie adăugată in blockchain aceasta trebuie să fie validată de majoritatea nodurilor din rețea. În acest fel niciun nod nu poate controla sau manipula individual registrul, ceea ce il face mai rezistent la falsificare sau fraudă. De asemenea descentralizarea permite o transparență si securitate sporită tocmai pentru că registrul este răspândit in mai multe noduri si nu depide de un singur punct de eșec. Spre deosebire de metodele tradiționale, blockchain-ul permite transferul  activelor digitale de la persoana la persoana (peer to peer) fără implicarea intermediarilor (T. Aste, 2017). 
+        </p>
+        <p>
+          &nbsp&nbsp&nbsp •	<strong>Transparența</strong> rețelei este dată de faptul că toate tranzacțiile din blockchain sunt vizibile public și înregistrate în registru. Aceasta inseamnă că oricine are acces la blockchain poate vedea si verifica istoricul tranzactiilor și starea curentă a registrului. Transparența blockchain-ului poate fi de asemenea un beneficiu pentru responsabilitate, deoarece odata ce o tranzacție a fost înregistrată aceasta poate fi urmarită inapoi până la părțile implicate, si anume adresa care a emis o anumită informație si cea care a recepționat-o. Această caracteristică face a blockchain-ul să fie adecvat pentru diverse cazuri de utilizare, de la tranzacțiile financiare până la managementul lanțurilor de aprovizionare unde transparența si responsabilitatea sunt esențiale.
+        </p>
+        <p>
+          &nbsp&nbsp&nbsp •	<strong>Trasabilitatea sau auditabilitatea</strong> este dată tocmai de faptul că este posibilă regăsirea istoricului tranzacțiilor sau a informatiilor stocate in registru. Acest lucru este realizat prin utilizarea unor identificatori digitali unici, cum ar fi un hash, care este alocat fiecarei tranzactii sau informație stocată pe blockchain, de la origine până la locația sa actuală. De exemplu in contextul unui lanț de aprovizionare, trasabilitatea poate fi folosită pentru a urmări mișcarea mărfurilor de la producător la consumator, obținând informații despre originea, calitatea, autenticitatea produselor respective cât și despre condițiile de depozitare sau transport ceea ce asigură o gestionare mai eficienă a lanțului. De asemenea poate fi folosită si in alte domenii, de pildă in sistemul medical, pentru urmărirea produselor medicale sau în industria textilă pentru verificarea autenticității aricolelor vestimentare sau a bunurilor de lux.
+        </p>
+        <p>
+          &nbsp&nbsp&nbsp •	<strong>Imuabilitatea</strong> blockchain-ului se referă la capacitatea rețelei de a se asigura că, odată ce datele au fost adăugate in registru, acestea nu pot fi modificare sau șterse. Un aspect cheie al imuabilității este utilizarea hashingului criptografic. Prin acesta, fiecare block din lanț conține un hash unic, care poate fi considerat o amprentă digitală a datelor stocate in acel bloc. Acest hash este generat folosind un algoritm matematic complex care preia informatia din bloc precum si hash-ul blocului anterior, ca informații de intrare. Deoarece hash-ul fiecărui bloc depinde si de hash-ul blocului anterior, schimbarea chiar si a unei singure informatii dintr-un anumit bloc ar determina modificarea hashului, facând conținutul său invalid. Pentru că această rețea este descentralizată si întreținută de mai mulți participanți sau noduri nu există un singur punct de eșec ceea ce o face mult mai dificil de spart pentru că un atacator ar trebui să compromită simultan majoritatea nodurilor din rețea. Combinația de hashing criptografic, rețea descentralizată și dovada muncii (proof of work), face extrem de dificilă modificarea datelor stocate, oferindu-i caracterul imuabil.
+        </p>
+        <p>
+          &nbsp&nbsp&nbsp •	<strong>Securitatea</strong> unei rețele blockchain este asigurată și susținută tocmai de caracteristicile enumerate mai sus. Algoritmii de hashing criptografic, structura descentralizată, mencanismele de consens, contractele inteligente si transparența construiesc o arhitectură greu de alterat de către un potențial atacator.
+        </p>
+      </div>
+    </section>
+    <section id="sectiunea3"><h1>Arhitectura unui blockchain</h1>
+      <div class="text-box" id="text-box">
+        <p>
+          &nbsp&nbsp&nbsp<strong>Blocurile</strong> sunt structuri de date care conțin informații despre tranzacțiile care au avut loc. Fiecare bloc, de regulă conține informații despre emițător, receptor, sumă și data la care a fost efectuat transferul. De asemenea, un bloc poate să conțină informații despre rețea sau contractele inteligente care au fost executate. Atunci când un bloc este creat și adăugat în șir, acesta trece printr-un proces de validare care implică funcții de hashing criptografic și mecanisme de consens.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp<strong>Lanțul</strong> se referă la secvența de blocuri care sunt conectate între ele prin funcții de hashing criptografic. Hash-ul fiecărui bloc nou adăugat în lanț este generat folosind date din hash-ul blocului precedent, ceea ce înseamnă că orice modificare a datelor unui bloc ar modifica și hash-ul acestuia și prin urmare și hash-ul blocurilor care urmează după el, făcând evident faptul că lanțul a fost compromis.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp<strong>Nodurile</strong> sunt entități în cadrul rețelei care ajută la menținerea integrității și securității ei. Un nod poate să fie orice dispozitiv conectat la internet care poate să ruleze software-ul necesar blockchain-ului, cum ar fi un computer personal sau un server. Fiecare nod deține o copie a întregului blockchain, ceea ce înseamnă că stochează o copie a fiecari tranzacții care a avut loc în rețea. Atunci când o nouă tranzacție este inițiată, un nod verifică valabilitatea tranzacției după care o adaugă într-un nou bloc. În momentul în care un bloc este complet, acesta va fi transmis rețelei pentru a putea fi validat și de alte noduri înainte de a-l adăuga la propria copie a blockchain-ului. Nodurile au un rol foarte important într-o rețea descentralizată, deoarece ele asigură securitatea rețelei. Cu cât sunt mai multe noduri distribuite în rețea, cu atât devine mai greu pentru o singură entitate să controleze rețeaua sau să o compromită. Dacă se întâmplă ca un nod să cedeze sau să se deconecteze de la internet, celelalte noduri vor putea valida tranzacții în continuare.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp<strong>Tranzacțiile</strong> se referă la transferul de date de la o parte la alta, cum ar fi transferul de criptomonede de la un portofel digital la altul. Datele dintr-o tranzacție de regulă includ adresele emițăorului și receptorului, valoare, sau alte informații suplimentare necesare pentru finalizarea tranzacției.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp<strong>Mecanismul de consens</strong> este un protocol care se asigură că toate nodurile din rețea sunt de acord cu starea blockchain-ului și valabilitatea oricăror tranzacții adăugate acestuia. Fiecare mecanism de consens are propriul set de reguli și proceduri pentru validarea și adăugarea tranzacților în rețea.
+        </p>
+      </div>
+    </section>
+    <section id="sectiunea4"><h1>Ce este criptografia și cum funcționează?</h1>
+      <div class="text-box" id="text-box">
+        <p>
+          &nbsp&nbsp&nbsp<strong>Criptografia</strong> este procesul de criptare și decriptare a informațiilor cu ajutorul unor algoritmi matematici complecși. În contextul tehnologiei blockchain, aceasta joacă un rol critic în securizarea datelor transmise în rețea. Atunci când se efectuează o tranzacție în blockchain, aceasta este criptată pentru a se asigura că doar destinatarul vizat poate să o citească.
+        </p>
+        <p>
+          &nbsp&nbsp&nbspPe rețelele blockchain criptarea asimetrică este cea mai comună modalitate de criptare și presupune utilizarea a două “chei”: o cheie publică și o cheie privată.  Aceste două chei creează o semnătură digitală pentru fiecare tranzacție. Cheia publică este partajată cu alți utilizatori din rețea, pe când cheia privată este ținută secretă de proprietarul cheii.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp<strong>Cheia Privată</strong> este un șir alfa-numeric secret și unic de 64 de litere și cifre care vă permite să controlați portofelul digital. Această cheie autentifică identitatea unei persoane sau entități și permite efectuarea tranzacțiilor sigure între două părți. Cheia privată este utilizată împreună cu o cheie publică pentru a cripta și decripta informații, pentru a crea semnăturile digitale și a verifica identitatea unui utilizator. Cheia privată trebuie păstrată confidențială deoarece oricine are acces la ea poate accesa cu ajutorul ei fondurile asociate, în criptomonede. Poate fi stocată într-un portofel digital.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbspO cheie privată sau o adresă privată va arăta cam așa:
+        </p>
+        <p>
+          &nbsp&nbsp&nbspxpty9x78WiPR356L9PDcopmRG6OZoRdvOHnoEG3UHorg25HFNpr34STyn9MN76ed
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspDeoarece un șir de 64 de litere și cifre aleatoare ar fi destul de greu de memorat, portofelul digital îl transformă într-o frază de acces de un anumit număr de cuvinte (de regulă 12 sau 24) cunoscută și sub denumirea de “seed phrase” sau “fraza cheie”, cu care se poate recupera accesul la fonduri. Fraza de acces este generată de portofel și nu poate fi schimbată sau reordonată. Această frază fiind singurul mod de recuperare a fondurilor, pierderea ei va duce automat la pierderea accesului la portofelul digital, drept urmare este important a fi păstrată într-un loc sigur.
+        </p>
+        <p>
+          &nbsp&nbsp&nbspExistă mai multe modalități de a salva această frază în siguranță, cel mai comun și mai simplu mod este de a nota cuvintele pe o foaie de hârtie și a o pune într-un loc sigur, unde nu o va găsi altcineva sau nu se va deteriora în timp. Se poate, de asemenea face o captură de ecran pentru fiecare cuvânt individual și să se salveze într-un folder securizat. Nu este recomandat să fie păstrate pozele în galeria foto. O altă modalitate sunt seturile de ștampile metalice, cu ajutorul cărora se poate grava fraza cheie pe o suprafață metalică, de obicei realizată din oțel inoxidabil.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp<strong>Cheia Publică</strong> este, de asemenea, un șir alfa-numeric folosit pentru a transfera fonduri. Când cineva dorește să trimită criptomonede, trebuie să cunoască cheia publică. Aceasta poate fi împărtășită altor utilizatori fără riscul de a compromite fondurile personale. 
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbspO cheie publică poate arăta cam așa: 
+        </p>
+        <p>
+          &nbsp&nbsp&nbsperd1mjphn20ldjjs3va5jhpu7kyw2ypaj9tpkth4kpk95xdf42f4rysqr82cnh
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspSpre deosebire de o semnătură clasică pe un document, care arată similar de fiecare dată indiferent de document, o semnătură digitală este mult mai puternică deoarece arată diferit pentru fiecare tranzacție și nu poate fi copiată.
+        </p>
+        <p>
+          &nbsp&nbsp&nbspO semnătură este generată cu ajutorul unei funcții care primește un set de date care depind de mesaj și de cheia privată a expeditorului.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbspFuncție de semnare (Mesaj, Cheie Privată) => <strong>Semnătura digitală</strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbspPentru a decripta tranzacția, o altă funcție folosește cheia publică a expeditorului pentru a verifica semnătura și a se asigura că tranzacția este validă.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbspFuncție de verificare (Mesaj, <strong>Semnătură digitală</strong>, Cheie Publică) = Valid/Invalid
+        </p>
+        <p>
+          &nbsp&nbsp&nbsp<strong>Funcții de hashing criptografic</strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspO funcție de hashing criptografic este un algoritm matematic care folosește un set de date de intrare (input), de regulă de dimensiuni variabile și generează date de ieșire (output), de dimensiuni fixe, cunoscute ca și hash. Setul de date de ieșire este unic setului de date de intrare, drept urmare orice modificare făcută datelor de intrare va produce un hash complet diferit. Fiecare bloc dintr-o rețea blockchain are un hash unic, care poate fi privit ca o amprentă a blocului. 
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp<strong>SHA-256</strong> (Secure Hash Algorithm 256-bit)  este o functie de hashing din familia SHA-2 și este utilizată pentru minarea de bitcoin (crearea de noi monede) și pentru generarea de noi adrese (cod unic de identificare pentru o locație virtuală unde se poate trimite bitcoin).
+        </p>
+        <p>
+          &nbsp&nbsp&nbspFuncțiile de hashing criptografic sunt infezabil de inversat în sensul că este foarte greu de obținut setul de date de intrare doar cunoscând hash-ul generat de funcție. De exemplu pentru o funcție SHA-256 (Secure Hash Algorithm 256-bit) care generează un anumit hash este aproape imposibil să spunem ce set de date de intrare au generat acel șir. Cu alte cuvinte, este ușor să generăm un set de date de ieșire pe baza datelor de intrare însă foarte dificil să facem acest lucru în sens invers (să generăm setul de date de intrare cu ajutorul datelor de ieșire). 
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspDe exemplu, dacă rulăm cuvântul “Matematica” într-o funcție SHA-256 vom obține un anumit hash iar dacă rulăm cuvântul “Matematică” vom obține un hash complet diferit, modificând o singură literă în datele de intrare. 
+        </p>
+        <br>
+        <div class="sha-image">
+          <img src="/modul1Blockchain/Matematica.PNG" id="sha-image">
+        </div>
+        <br>
+        <div class="sha-image">
+          <img src="/modul1Blockchain/Matematică.PNG" id="sha-image">
+        </div>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspAceste funcții furnizează un mod sigur și eficient de verificare datelor și pot fi folosite pentru o varietate de aplicații, unde securitatea și integritatea sunt importante.
+        </p>
+      </div>
+    </section>
+    <section id="sectiunea5"><h1>Mecanisme de consens</h1>
+      <div class="text-box" id="text-box">
+        <p>
+          &nbsp&nbsp&nbspPrin mecanism de consens înțelegem un mod prin care se ajunge la un acord general între mai multe părți. Aceste mecanisme au fost utilizate timp de decenii pentru a stabili consens între nodurile unei bazei de date, servere sau alte infrastructuri. În ceea ce privește tehnologia blockchain, ajungerea la un consens înseamnă că cel puțin 51% dintre nodurile din rețea sunt de acord cu o anumită decizie. Acest consens convine asupra validității tranzacțiilor, cu alte cuvinte este modul în care participanții din rețea ajung la un acord asupra tranzacțiilor care sunt valide și care nu sunt și cum sunt înregistrate aceste tranzacții pe blockchain. 
+        </p>
+        <p>
+          &nbsp&nbsp&nbspMecanismele de consens sunt necesare în rețelele descentralizate deoarece nu există o autoritate centrală care să poată valida tranzacții sau să determine starea globală a rețelei.
+        </p>
+      </div>
+      <div class="text-box" id="text-box">
+      <p>
+        &nbsp&nbsp&nbsp<strong>Proof of Work</strong> (PoW) sau “Dovada muncii” este mecanismul de consens original utilizat de Bitcoin și presupune ca participanții să rezolve probleme matematice complexe pentru a valida tranzacțiile și a fi recompensați pentru această muncă. Într-un sistem Proof of Work, fiecare block de tranzacții din rețea este validat de mineri care concurează între ei pentru a rezolva un puzzle matematic. Acest puzzle este conceput în așa fel încât necesită o cantitate mare de putere de procesare iar primul miner care reușește să îl rezolve și să valideze blocul de tranzacții este recompensat pentru munca depusă. Dificultatea este ajustată automat de către rețea pentru a se menține o rată constantă de validare a blocurilor. Asta înseamnă că pe măsură ce mai mulți mineri se alătură rețelei și concurează pentru a rezolva puzzle-ul, dificultatea acestuia crește dar totodată crește și securitatea rețelei. Dezavantajul principal al acestui mecanism este că puterea mare de calcul necesită o cantitate semnificativă de energie care este costisitoare și dăunătoare mediului. În plus, scalabilitatea rețelelor care folosesc acest mecanism poate fi limitată deoarece cerințele mari de calcul fac dificilă procesarea rapidă a unui număr mare de tranzacții.
+      </p>
+      <br>
+      <p>
+        &nbsp&nbsp&nbspIn continuare, vom explica ce înseamnă munca, dovada, minerii și puterea computațională în acest context și cum se ajunge la un consens.
+      </p>
+      <br>
+      <p>
+        &nbsp&nbsp&nbsp<strong>Munca</strong> se referă la procesul de hashing al funcției pentru un anumit set de date de intrare. Algoritmul SHA-256 pe baza unui set de date de intrare de orice lungime generează o ieșire de dimensiune fixă de 256 de biți, care mai apoi se poate converi într-un șir alfa numeric pentu a putea fi mai ușor de citit. Munca implicată în calculul hash-ului SHA-256 al unei anumite intrări presupune mai multe runde de operații matematice complexe, inclusiv funcții logice sau aritmetică modulară. Datele de ieșire ale fiecărei runde sunt folosite ca și date de intrare pentru următoarea rundă, rezultatul final fiind valoarea hash-ului funcției SHA-256 inițiale.
+      </p>
+      <br>
+      <p>
+        &nbsp&nbsp&nbsp<strong>Puterea computațională</strong> se măsoară în rata de hashing, care este viteza cu care un miner sau un grup de mineri efectuează aceste calcule matematice pentru a valida tranzacțiile. Rata de hashing este măsurată în hashuri pe secundă (H/s) sau în multiplii cum ar fi tera hashuri pe secundă (TH/s). Intuitiv, cu cât rata de hashing este mai mare, cu atât mai mulă putere de calcul este utilizată pentru a valida tranzacțiile și a crea noi blocuri. Rata de hash este influențată de mai mulți factori cum ar fi numărul și viteza mașinilor de exploatare utilizate, eficiența hardware-ului și costul energiei electrice.
+      </p>
+      <br>
+      <p>
+        &nbsp&nbsp&nbsp<strong>Minerii</strong> sunt cei care participă la procesul de validare și efectuează această muncă. În mineritul tradițional, minerii folosesc echipamente grele și unelte pentru a extrage minerale valoroase din pământ, rezolvând probleme complexe de inginerie și geologie în proces. În mod similar, in contextul mecanismului Proof of Work, minerii folosesc echipamente hardware și software specializat pentru a extrage resursa valoroasă, adică un bloc nou valid. Cu cât un miner are mai multă putere computațională, cu arât are mai multe șanse să fie cel care găsește hash-ul portivit. Procesul de exploatare este similar în această privință.
+      </p>
+      <br>
+      <p>
+        &nbsp&nbsp&nbsp<strong>Dovada</strong> presupune ca nodurile din rețea să confirme că soluția găsită de mineri este validă. Odată ce această muncă a fost validată, noul bloc este adăugat în lanț și minerul este recompensat în criptomonede sau taxe de tranzacții pentru acel bloc.
+      </p>
+    </div>
+    <div class="text-box" id="text-box">
+      <p>
+      &nbsp&nbsp&nbsp<strong>Proof of Stake</strong> (PoS) sau “dovada mizei” este o clasă de mecanisme de consens pentru rețelele blockchain care funcționează selectând validatorii tranzacțiilor proporțional cu miza lor în rețea, adică cu cantitatea lor de dețineri în criptomoneda asociată rețelei în loc de puterea computațională necesară în mecanismele Proof of Work. În acest sistem validatorii, cunoscuți ca și “stakers” blochează o anumită cantitate de monede ca și „miză” în rețea servind drept garanție, asigurând că participanții au un motiv să acționeze în cel mai bun interes al rețelei. Validatorii care validează corect tranzacțiile și contribuie la securitatea rețelei sunt recompensați cu monede nou create sau cu taxe de tranzacție. Pe de altă parte cei care sunt rău intenționați își pot pierde miza ca formă de penalizare.
+      </p>
+      <p>
+        &nbsp&nbsp&nbspAceastă clasă cuprinde mai multe mecanism, fiecare având diferite abordări prin care se ajunge la consens, printre care: Pure Proof of Stake (PPoS), Delegate Proof of Stake (DPoS), Leased Proof of Stake (LPoS), Byzantine Fault Tolerance (BFT).
+      </p>
+      <p>
+        &nbsp&nbsp&nbspÎn comparație cu sistemele Proof of Work, aceste sisteme sunt mai eficiente din punct de vedere energetic deoarece nu necesită cantități mari de putere de calcul pentru a securiza rețeaua. În plus, pot fi mai rezistente la centralizare deoarece costul controlului rețelei presupune achiziționarea unei ponderi mari de criptomonede, ceea ce este foarte costisitor. 
+      </p>
+    </div>  
+    <div class="text-box" id="text-box">
+      <p>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>Mecanisme de consens alternative</strong>
+      </p>
+      <br>
+      <p>
+        &nbsp&nbsp&nbsp<strong>Proof of Capacity</strong> (PoC) se bazează pe spațiul de pe hard disk în loc de puterea computațională. Mai este denumit și Proof of Space sau Proof of Storage. Acest mecanism generează seturi mari de date care sunt stocate pe un hard disk. Cu cât este mai mare setul de date de pe hard disk, cu atât sunt mai mari șansele de a găsi următorul bloc.
+      </p>
+      <br>
+      <p>
+        &nbsp&nbsp&nbsp<strong>Proof of Authority</strong> (PoA) este utilizat în unele rețele blockchain și se bazează pe un grup de validatori de încredere pentru a valida tranzacții și a crea noi blocuri. Unul dintre principalele avantaje ale acestui mecanism este că poate oferi timpi de tranzacție mai rapizi și un randament mai mare. Acest lucru se datorează faptului că validatorii sunt de regulă entități cunoscute cu o reputație prestabilită și nu este nevoie de puzzle-uri matematice complexe consumatoare de energie. Se creează un dezavantaj prin faptul că Proof of Authority poate fi mai puțin descentralizat deoarece validatorii sunt de obicei aleși manual sau aprobați de o autoritate centrală.
+      </p>
+    </div>
+    </section>
+    <section id="sectiunea6"><h1>Contracte Inteligente (Smart Contracts)</h1>
+      <div class="text-box" id="text-box">
+        <p>
+          &nbsp&nbsp&nbspContractele inteligente sunt programe de calculator sau protocoale de tranzacție destinate să execute sau să controleze automat evenimente și acțiuni în conformitate cu termenii unui acord. Aceste contracte pot fi folosite pentru automatizarea schimbului de active între părți, fără a fi nevoie de intermediari precum bănci sau avocați. Obiectivele principale ale contractelor inteligente sunt: reducerea nevoii de intermediari de încredere, reducerea fraudelor și a excepțiilor accidentale sau răuvoitoare. Sunt asociate în mod obișnuit cu criptomonedele iar contractele inteligente introduse de Ethereum sunt considerate elemente fundamentale pentru finanțele descentralizate (DeFi) și aplicațiile NFT.
+        </p>
+        <p>
+          &nbsp&nbsp&nbspAcestea sunt executate de noduri dintr-o rețea blockchain. Atunci când un contract inteligent este implementat pe un blockchain, acesta este distribuit în întreaga rețea de noduri. Fiecare nod are o copie a codului contractului iar atunci când este inițiată o tranzacție, nodurile lucrează împreună pentru a verifica tranzacția și a executa codul. Odată ce tranzacția este verificată, rezultatul executării contractului inteligent este înregistrat în rețea. Deoarece blockchain-ul este o rețea descentralizată, fiecare nod păstrează o copie a înregistrării, facând-ul transparent și imuabil.
+        </p>
+        <p>
+          &nbsp&nbsp&nbspPe lângă nivelul de securitate ridicat și transparență, utilizarea acestui tip de execuție permite automatizarea tranzacțiilor complexe fără a fi nevoie de intermediari, făcând procesele mai eficiente și mai rentabile.
+        </p>
+      </div>
+    </section>
+    <section id="sectiunea7"><h1>Avantaje și Dezavantaje</h1>
+      <div class="text-box" id="text-box">
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>Avantaje</strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp•	<strong>Securitatea</strong> este unul din principalele avantaje și este dată de tehnicile criptografice. Caracteristicile ei unice construiesc o arhitectură greu de alterat, descentralizarea, transparența și imuabilitatea asigură integritatea și autenticitatea datelor. 
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp•	<strong>Transparența</strong> registrului crește gradul de încredere deoarece fiecare tranzacție este salvată în registru și nu poate fi alterată sau ștearsă. Tranzacțiile pot fi verificate în timp real pe Blockchain Explorer, acesta este un software care permite și vizualizarea blocurilor sau caracteristicilor rețelei. De exemplu, în mod similar, rețeaua MultiversX are un astfel de software numit MultiversX Explorer unde apar în timp real informații despre starea rețelei, blocurile create, tranzacții, preț, etc.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp•	<strong>Descentralizarea</strong> reduce semnificativ riscul de manipulare a rețelei deoarece nu există un sigur punct de eșec, o autoritate centrală care poate fi coruptă de un potențial atacator. Transferul de informații are loc de la peroană la persoană eliminând intermadiarii cum ar fii băncile, drept urmare eliminând nevoia de a avea încredere într-o astfel de autoritate centrală.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp•	Tehnologia oferă mai multă <strong>stabilitate</strong> deoarece odată ce un bloc a fost creat sau o tranzacție a fost efectuată este foarte puțin probabil ca aceasta să fie inversată. Stocarea înregistrărilor financiare sau a altor forme de date este mult mai sigură. O afacere ar putea folosi tehnologia blockchain pentru a preveni eventuale fraude din partea angajaților. Deoarece fiecare tranzacție este salvată în registru și nu poate fi modificată, unui angajat i-ar fi aproape imposibil să-si acopere urmele.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp<strong>Dezavantaje</strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp•	Lipsa unei autorități cetrale poate îngreuna <strong>aplicarea reglementărilor</strong> pentru tehnologia blockchain sau pentru piața criptomonedelor iar aceasta aduce multă incertitudine.
+        </p>
+        <p>
+          &nbsp&nbsp&nbsp•	Tehnologia blockchain este complexă și destul de <strong>dificil de implementat</strong>, necesită expertiză tehnică în criptografie, informatică și alte domenii. Acest lucru poate face dificilă adopția și integrarea ei pentru organizațiile mai mici.
+        </p>
+        <p>
+          &nbsp&nbsp&nbsp•	Moedelele de blockchain care folosesc mecanismul de consens Proof of Work au un dezavantaj specific, pe lângă <strong>consumul ridicat de energie</strong>. Este posibil teoretic, ca o entitate să dețină mai mult de 50% din puterea de hashing a unei rețele, ceea ce i-ar permite să perturbe rețeaua.
+        </p>
+      </div>
+    </section>
+    <section id="sectiunea8"><h1>Aplicații ale tehnologiei</h1>
+      <div class="text-box" id="text-box">
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>1.	Lanțurile de aprovizionare </strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspTehnologia blockchain are potențialul de a revoluționa lanțurile de aprovizionare prin introducerea transparenței și eficienței specifice. Lanțurile de aprovizionare implică multe elemente diferențiate care necesită integrare și coordonare. O bază de date transparentă și imuabilă facilitează un ecosistem interoperabil. 
+        </p>
+        <p>
+          &nbsp&nbsp&nbspImuabilitatea înregistrărilor asigură faptul că odată ce informațiile au fost introduse acestea nu pot fi modificate sau șterse. În acest mod se poate verifica autenticitatea produselor de la furnizori, condițiile de păstrare sau transport. În cele din urmă toate aceste lucruri contribuie la satisfacția clienților finali și la creșterea competitivității pe piață.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>2.	Sistemul de sănătate </strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspPrin stocarea în siguranță a fișelor medicale pe un blockchain, pacienții își pot păstra confidențialitatea, având în același timp posibilitatea să transmită informații medicale mai multor instituții, într-o manieră sigură. Utilizând tehnologia blockchain, schimbul de informații ar putea fi mai rapid și eficient decât este în prezent.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>3.	Sistem de vot </strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspCu un sistem de vot bazat pe blockchain, alegătorii pot vota electronic folosind o identitate digitală unică și privată. Voturile ar putea fi stocate pe un blockchain făcând posibilă numărarea voturilor transparentă și auditabilă. În acest mod se elimină necesitatea secțiilor de votare, alegătorii având posibilitatea să voteze de oriunde în lume, dacă au o conexiune la internet fapt care ar putea crește prezența la vot, în special pentru persoanele care se confruntă cu probleme de mobilitate. Cu toate acestea există și provocări în implementarea unui astfel de sistem cum ar fi asigurarea că doar persoanele eligibile pot participa la procesul de vot.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>4.	Internet of Things (Internetul obiectelor)</strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspÎntr-un ecosistem Internet of Things fiecare dispozitiv are o identitate unică iar tehnologia blockchain poate fi folosită pentru a administra și autentifica într-un mod sigur aceste identități.  Informațiile generate de astfel de dispozitive pot fi stocate pe blockchain pentru a se asigura integritatea și securitatea lor. Un ecosistem de dispozitive conectate prin blockchain poate fi folosit în lanțuri de aprovizionare pentru a urmări transferul mărfurilor în timp real, reducând riscul de fraude sau erori. Un exemplu de astfel de proiect pe blockchain este VeChain.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>5.	NFTs (Non-Fungible Tokens) </strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspTehnologia blockchain oferă un mod sigur, transparent și descentralizat pentru crearea, schimbul și administrarea tokenurilor. Tokenurile non fungibile, cu ajutorul blockchain-ului au potențialul să revoluționeze arta și industria de divertisment, prin faptul că oferă noi oportunități pentru creatori, artiști și colecționari. 
+        </p>
+        <p>
+          &nbsp&nbsp&nbspExemplul umător ne ajută sa să înțelegem utilitatea în lumea reală a unui astfel de token: O trupă rock ar putea crea un anumit număr de astfel de token-uri și să le pună la vânzare, într-o piață descentralizată. Persoanele care cumpără token-urile pot avea acces la conținut unic creat de artiști sau pot participa la toate concertele pe care le susține trupa pe baza NFT-ului, condițiile fiind stabilite pe baza unor contracte inteligente.
+        </p>
+        <p>
+          &nbsp&nbsp&nbspCaracterul imuabil al tehnologiei le face să fie non-fungibile, acestea nu pot fi copiate, multiplicate sau falsificate, fiecare având o amprentă unică, un hash unic.
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>6.	Web3 și Metaverse</strong>
+        </p>
+        <br>
+        <p>
+          &nbsp&nbsp&nbspWeb3 reprezintă o schimbare de paradigmă, un nou mod în care ne gândim la internet. Este un internet în care utilizatorii au mai mult control asupra datelor și identității lor, unde aplicațiile sunt descentralizate, de la persoană la persoană, fără platforme centralizate care au acces și folosesc datele lor pentru profit. Tehnologia Blockchain este un element fundamental pentru Web3, oferind o infrastructură, un ecosistem mai democratic. 
+        </p>
+        <p>
+          &nbsp&nbsp&nbspÎn mod analog, blockchain-ul permite construirea unor piețe descentralizate în metaverse unde participanții pot face schimb, pot cumăra sau vinde bunuri digitale cu ajutorul contractelor inteligente fără a mai fi nevoie de intermediari. 
+        </p>
+      </div>
+    </section>
+    <!-- <section id="sectiunea9"><h1>Secțiunea 9</h1></section> -->
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

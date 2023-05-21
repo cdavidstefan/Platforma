@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Navigation</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="inner-area">
+    <!-- Menu Overlay --> 
+    <!-- no problem in adding overlay-slide-left, it doesn't affect initial page load. it's hidden to the left -->
+    <div class="overlay overlay-slide-left" id="overlay">
+      <!-- Menu Items -->
+      <nav>
+        <ul>
+          <!-- Because the slide-out class is transforming off the page we won't see it when we load the page -->
+          <li id="nav-1" class="slide-out-1"><a href="/homePage/index.html">Pagina Principala</a></li>
+          <li id="nav-2" class="slide-out-2"><a href="#sectiunea1">sectiunea1</a></li>
+          <li id="nav-3" class="slide-out-3"><a href="#sectiunea2">sectiunea2</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Menu Bars -->
+    <div class="menu-bars" id="menu-bars">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+    <!-- Sections -->
+    <section id="sectiunea1"><h1>Glosar Termeni (De adăugat)</h1>
+      <div class="text-box" id="text-box">
+
+      </div>
+    </section>
+    <section id="sectiunea2"><h1></h1>
+        <div class="text-box" id="text-box">
+  
+        </div>
+      </section>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
